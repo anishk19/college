@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Custom Styles -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      .hero-section {
+        height: 60vh;
+        min-height: 1000px;
+        background: url('https://www.marwadiuniversity.ac.in/wp-content/uploads/2025/06/3.png') center center;
+        background-size: cover;
+        position: relative;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(53, 48, 131, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+      .carousel-item img {
+        height: 550px;
+        object-fit: cover;
+      }
+      .recruiter-logo {
+        height: 60px;
+        object-fit: contain;
+        filter: grayscale(1);
+        transition: filter 0.3s ease;
+      }
+      .recruiter-logo:hover {
+        filter: grayscale(0);
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Header & Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container-fluid container-xl">
+        <a class="navbar-brand fw-bold fs-4" href="#">Marwadi University</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#vision-mission">Vision & Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#psos">Outcomes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recruiters">Recruiters</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary ms-lg-3">Apply Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay p-4">
+                <h1 class="display-4 fw-bold">Excellence in Education</h1>
+                <p class="lead fs-4 mt-3 col-md-8">
+                    Join a community dedicated to learning, research, and innovation for a brighter future. We are committed to nurturing the next generation of leaders.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg mt-4 shadow-lg">Find Your Program</a>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Section -->
+        <section id="vision-mission" class="py-5 bg-white">
+            <div class="container container-xl py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-dark">Our Guiding Principles</h2>
+                </div>
+                <div class="row g-4">
+                    <!-- Vision Card -->
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow-lg border-primary border-2">
+                            <div class="card-body p-5">
+                                <h3 class="card-title fs-2 fw-semibold text-primary d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill me-2" viewBox="0 0 16 16">
+                                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                    </svg>
+                                    Our Vision
+                                </h3>
+                                <p class="card-text fs-5 mt-3 text-secondary">
+                                    Our vision is to be a premier institution globally, fostering excellence in academics, research, and ethical leadership. We aim to create innovative solutions for a sustainable future and empower students to become world-class citizens.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mission Card -->
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow-lg border-success border-2">
+                            <div class="card-body p-5">
+                                <h3 class="card-title fs-2 fw-semibold text-success d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bullseye me-2" viewBox="0 0 16 16">
+                                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                      <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                                      <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                                      <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                                    </svg>
+                                    Our Mission
+                                </h3>
+                                <p class="card-text fs-5 mt-3 text-secondary">
+                                    Our mission is to provide a dynamic learning environment and nurture talent through innovative teaching. We promote research and discovery, serving society with unwavering integrity and a deep commitment to the betterment of all.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Specific Outcomes (PSOs) -->
+        <section id="psos" class="py-5 bg-light">
+            <div class="container container-lg py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-dark">Program Specific Outcomes</h2>
+                    <p class="lead fs-5 text-muted">
+                        Tailored skills and knowledge for career success in every discipline.
+                    </p>
+                </div>
+                <!-- Accordion -->
+                <div class="accordion shadow-sm" id="psoAccordion">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fs-5 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Computer Science & Engineering
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#psoAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Analyze, design, and develop complex software solutions for real-world problems.</li>
+                                    <li class="list-group-item">Apply advanced principles of data structures, algorithms, and artificial intelligence.</li>
+                                    <li class="list-group-item">Demonstrate proficiency in modern software development tools, cloud platforms, and cybersecurity.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fs-5 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Business Administration (MBA)
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#psoAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Exhibit strong analytical and strategic decision-making skills in complex business scenarios.</li>
+                                    <li class="list-group-item">Lead and manage diverse teams effectively in a dynamic global business environment.</li>
+                                    <li class="list-group-item">Formulate and implement innovative marketing and financial strategies for sustainable growth.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fs-5 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Mechanical Engineering
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#psoAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Design, analyze, and optimize complex thermal and mechanical systems.</li>
+                                    <li class="list-group-item">Apply core principles of manufacturing, materials science, and modern robotics.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Courses Offered -->
+        <section id="courses" class="py-5 bg-white">
+            <div class="container container-xl py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-dark">Explore Our Programs</h2>
+                    <p class="lead fs-5 text-muted">
+                        Find the perfect course to launch your career.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <!-- Course Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0" style="transition: all 0.3s ease;">
+                            <img src="https://www.marwadiuniversity.ac.in/wp-content/uploads/2025/05/B.TEch-img-scaled.jpg" class="card-img-top" alt="Engineering Classroom">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fs-4 fw-semibold text-dark">B.Tech Computer Science</h5>
+                                <p class="card-text text-secondary mt-2">
+                                    Dive into AI, data science, and cybersecurity. Our flagship program prepares you for the frontiers of technology. Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0 p-4 pt-0">
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0" style="transition: all 0.3s ease;">
+                            <img src="https://www.marwadiuniversity.ac.in/wp-content/uploads/2025/05/C1_05762-2-scaled.jpg" class="card-img-top" alt="Business Lecture">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fs-4 fw-semibold text-dark">Master of Business (MBA)</h5>
+                                <p class="card-text text-secondary mt-2">
+                                    Develop leadership skills with specializations in finance, marketing, and human resources. Join the next generation of business leaders.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0 p-4 pt-0">
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0" style="transition: all 0.3s ease;">
+                            <img src="https://www.marwadiuniversity.ac.in/wp-content/uploads/2025/05/moot-court.png" class="card-img-top" alt="Law Library">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fs-4 fw-semibold text-dark">B.A. LL.B. (Hons.)</h5>
+                                <p class="card-text text-secondary mt-2">
+                                    An integrated five-year program focusing on corporate and criminal law, taught by industry experts. Lorem ipsum dolor sit amet, consectetur.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0 p-4 pt-0">
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section id="gallery" class="py-5 bg-light">
+            <div class="container container-xl py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-dark">Campus Life & Events</h2>
+                </div>
+                <!-- Bootstrap Carousel -->
+                <div id="eventCarousel" class="carousel slide carousel-fade shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://live.staticflickr.com/1906/30702180347_969217c870_b.jpg" class="d-block w-100" alt="Graduation Ceremony">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                                <h5>Graduation Ceremony 2025</h5>
+                                <p>Celebrating the bright future of our graduating class with honors and accolades.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.marwadiuniversity.ac.in/wp-content/themes/marwadi-university/assets/img/0M7A7175.png" class="d-block w-100" alt="Annual Tech Fest">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                                <h5>Annual 'Innovate' Tech Fest</h5>
+                                <p>A university-wide showcase of student innovation, cutting-edge robotics, and coding competitions.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://news.easyshiksha.com/wp-content/uploads/MU-Fest-2023-scaled.jpg" class="d-block w-100" alt="Campus Cultural Night">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                                <h5>'Spectrum' Cultural Night</h5>
+                                <p>Students from all backgrounds come together to display diverse talents in music, dance, and drama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Recruiters -->
+        <section id="recruiters" class="py-5 bg-white">
+            <div class="container container-xl py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-dark">Our Top Recruiters</h2>
+                    <p class="lead fs-5 text-muted">
+                        Connecting talent with leading global companies.
+                    </p>
+                </div>
+                <div class="row gy-4 d-flex justify-content-center align-items-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuEcT6bcniwESWosWm6YZG3pDAjOwoAQxvtIA3abuz-J4tNXz6c6b2bAQsorEEdG5i98&usqp=CAU" alt="Google Logo" class="img-fluid recruiter-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1280px-Amazon_logo.svg.png" alt="Amazon Logo" class="img-fluid recruiter-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTydQpsrBk6gItfOu27vRnE6seIa-NdSxaNig&s" alt="Infosys Logo" class="img-fluid recruiter-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/DeloitteNewSmall.png" alt="Deloitte Logo" class="img-fluid recruiter-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzthMCIjS886hlrjSxeb1-qxzqic-B96YvA&s" alt="Wipro Logo" class="img-fluid recruiter-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgbjHKBzoFAznclFuJ7I8QFrQa7lcLO8TxQg&s" alt="TCS Logo" class="img-fluid recruiter-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container container-xl text-md-start">
+            <div class="row mt-3">
+                <!-- University Info -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4 fs-4">Marwadi University</h5>
+                    <p class="text-white-50">MarwadiUniversity</p>
+                    <p class="text-white-50">Rajkot, Gujarat 360001, India</p>
+                    <p class="text-white-50 mt-2">Email: info@university.edu</p>
+                    <p class="text-white-50">Phone: +91 12345 67890</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4 fs-5">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#vision-mission" class="text-white-50 text-decoration-none">Vision & Mission</a></li>
+                        <li class="mb-2"><a href="#courses" class="text-white-50 text-decoration-none">Courses</a></li>
+                        <li class="mb-2"><a href="#gallery" class="text-white-50 text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="#recruiters" class="text-white-50 text-decoration-none">Recruiters</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Admissions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4 fs-5">Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Facebook</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Twitter</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-4 mt-4 border-top border-secondary">
+                <p class="text-white-50 mb-0">&copy; 2025 Marwadi University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
